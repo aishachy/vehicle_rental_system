@@ -11,10 +11,10 @@ https://second-assignment-aishachy-aysha30s-projects.vercel.app/
 - Vehicle availability tracking  
 - Input validation and error handling
 # Technology Stack
-Backend: Nodejs, Typescript, Express
-Database: PostgreSQL
-Libraries: pg, bcrypt, jsonwebtoken, dotenv, tsx
-Used Postman for API testing
+- Backend: Nodejs, Typescript, Express
+- Database: PostgreSQL
+- Libraries: pg, bcrypt, jsonwebtoken, dotenv, tsx
+- Used Postman for API testing
 # Setup
 1. Clone the repository:
 git clone https://github.com/aishachy/vehicle_rental_system.git
