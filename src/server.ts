@@ -1,6 +1,5 @@
 import express, { Request, Response } from "express"
 import config from "./config";
-import cors from 'cors';
 import initDB, { pool } from "./config/db";
 import logger from "./middleware/logger";
 import { usersRoutes } from "./modules/users/users.routes";
@@ -13,10 +12,6 @@ const port = config.port;
 
 app.use(express.json());
 
-app.use(cors({
-  origin: 'http://localhost:5000', // your frontend URL
-  credentials: true,               // allow cookies
-}));
 
 //initialize db
 initDB();
