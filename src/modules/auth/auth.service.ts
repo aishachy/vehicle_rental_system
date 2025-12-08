@@ -40,10 +40,9 @@ const signUpUser = async (name: string, email: string, password: string, phone: 
     if (result.rows.length > 0) {
         return null;
     }
-
+    const hashedPassword = await bcrypt.hash(password, 10)
     const userRole = role || "user";
 
-    const hashedPassword = await bcrypt.hash(password, 10)
 
     const createUser = await pool.query(`INSERT INTO users(name, email, password, phone, role) VALUES ($1, $2, $3, $4, $5) RETURNING id, name, email, phone, role, created_at`, [name, email, hashedPassword, phone, userRole])
 

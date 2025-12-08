@@ -7,21 +7,12 @@ const signInUser = async (req: Request, res: Response) => {
     try {
         const result = await authServices.signInUser(email, password);
 
-            if (result === null) {
-      // No user found
-      return res.status(404).json({
-        success: false,
-        message: "User not found",
-      });
-    }
-
-    if (result === false) {
-      // Password did not match
-      return res.status(401).json({
-        success: false,
-        message: "Incorrect password",
-      });
-    }
+        if (!result) {
+            return res.status(404).json({
+                success: false,
+                message: "User not found",
+            });
+        }
         res.status(200).json({
             success: true,
             message: "Login successful",
@@ -32,18 +23,24 @@ const signInUser = async (req: Request, res: Response) => {
         res.status(500).json({
             success: false,
             message: err.message
-     })
+        })
     }
 }
 
 const signUpUser = async (req: Request, res: Response) => {
     const { name, email, password, phone, role } = req.body;
 
-    try{
+    try {
         const result = await authServices.signUpUser(name, email, password, phone, role)
 
-         res.status(200).json({
-            success: false,
+        if (!result) {
+            return res.status(400).json({
+                success: false,
+                message: "Email already exists",
+            });
+        }
+        res.status(200).json({
+            success: true,
             message: "user registered successfully",
             data: result
         })
@@ -52,9 +49,9 @@ const signUpUser = async (req: Request, res: Response) => {
         res.status(500).json({
             success: false,
             message: err.message
-     })
+        })
     }
-    }
+}
 
 export const authController = {
     signInUser,
