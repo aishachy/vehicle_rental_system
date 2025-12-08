@@ -18,11 +18,14 @@ https://second-assignment-aishachy-aysha30s-projects.vercel.app/
 # Setup
 1. Clone the repository:
 git clone https://github.com/aishachy/vehicle_rental_system.git
-2. Navigate
+
+2. Navigate:
 cd vehicle_rental_system
+
 3.Install dependencies:
 npm install
 4. Setup Environment variables
+
 create a .env file
 PORT=5000
 CONNECTION_STR=connection_str
@@ -35,4 +38,5 @@ http://localhost:5000/api/v1/
 
 ## Submission link
 Github repo : https://github.com/aishachy/vehicle_rental_system
+
 Live deployment : https://second-assignment-aishachy-aysha30s-projects.vercel.app/
