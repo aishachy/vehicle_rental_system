@@ -2,7 +2,7 @@
 # Project Name :
 Vehicle Rental System
 # Live URL
-https://second-assignment-two-livid.vercel.app/
+https://second-assignment-aishachy-aysha30s-projects.vercel.app/
 # Features
 - User registration and authentication (Admin & Customer)  
 - Vehicle management (CRUD)  
@@ -40,4 +40,4 @@ http://localhost:5000/api/v1/
 ## Submission link
 Github repo : https://github.com/aishachy/vehicle_rental_system
 
-Live deployment : https://second-assignment-two-livid.vercel.app/
+Live deployment : https://second-assignment-aishachy-aysha30s-projects.vercel.app/
