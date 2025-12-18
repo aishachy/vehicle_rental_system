@@ -24,6 +24,7 @@ cd vehicle_rental_system
 
 3.Install dependencies:
 npm install
+
 4. Setup Environment variables
 
 create a .env file
@@ -39,4 +40,4 @@ http://localhost:5000/api/v1/
 ## Submission link
 Github repo : https://github.com/aishachy/vehicle_rental_system
 
-Live deployment : https://second-assignment-aishachy-aysha30s-projects.vercel.app/
+Live deployment : https://second-assignment-two-livid.vercel.app/
