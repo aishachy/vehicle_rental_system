@@ -14,7 +14,7 @@ app.use(express.json());
 //initialize db
 initDB();
 
-app.get('/api/v1', logger, (req: Request, res: Response) => {
+app.get('/', logger, (req: Request, res: Response) => {
   res.send('Hello NextLevel Web Developers')
 });
 
