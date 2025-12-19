@@ -2,7 +2,7 @@
 # Project Name :
 Vehicle Rental System
 # Live URL
-https://second-assignment-two-livid.vercel.app/api/v1
+https://second-assignment-two-livid.vercel.app
 # Features
 - User registration and authentication (Admin & Customer)  
 - Vehicle management (CRUD)  
