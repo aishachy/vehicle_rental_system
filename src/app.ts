@@ -6,15 +6,14 @@ import { vehiclesRoutes } from "./modules/vehicles/vehicles.routes";
 import { bookingsRoutes } from "./modules/bookings/bookings.routes";
 import { authRoutes } from "./modules/auth/auth.routes";
 
-const app = express()
-
+const app = express();
 
 app.use(express.json());
 
 //initialize db
 initDB();
 
-app.get('/', logger, (req: Request, res: Response) => {
+app.get('/api/v1', logger, (req: Request, res: Response) => {
   res.send('Hello NextLevel Web Developers')
 });
 
