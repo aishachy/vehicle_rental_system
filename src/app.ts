@@ -35,5 +35,13 @@ app.use("/api/v1/bookings", bookingsRoutes)
 
 app.use("/api/v1/auth", authRoutes)
 
+app.use((req, res) => {
+  res.status(404).json({
+    success: false,
+    message: "route not found",
+    path: req.path
+  })
+})
+
 
 export default app;
