@@ -48,7 +48,7 @@ const signUpUser = async (name: string, email: string, password: string, phone: 
 
     const user = createUser.rows[0];
     const token = jwt.sign({ id: user.id, name: user.name, email: user.email, role: user.role }, config.jwtSecret as string, {
-        expiresIn: "7d",
+        expiresIn: "20d",
     })
 
     return { token, user }
