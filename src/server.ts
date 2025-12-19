@@ -1,5 +1,7 @@
 // import config from "./config";
-// import app from "./app";
+import app from "./app";
+
+export default app;
 
 // const port = config.port || 5000;
 
