@@ -40,4 +40,4 @@ http://localhost:5000/api/v1/
 ## Submission link
 Github repo : https://github.com/aishachy/vehicle_rental_system
 
-Live deployment : https://second-assignment-two-livid.vercel.app/
+Live deployment : https://second-assignment-two-livid.vercel.app/api/v1
